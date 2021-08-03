@@ -7,9 +7,10 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:contentDescription="@string/image_description"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -32,7 +33,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.006" />
 
     <TextView
@@ -59,28 +60,30 @@
         app:layout_constraintVertical_bias="0.09" />
 
     <TextView
-        android:id="@+id/leftTime"
+        android:id="@+id/leftTimeID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0:00"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/seekBar"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:text="0:00"
+        />
 
     <TextView
-        android:id="@+id/rightTime"
+        android:id="@+id/rightTimeID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="4:00"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.942"
-        app:layout_constraintStart_toEndOf="@+id/leftTime"
+        app:layout_constraintStart_toEndOf="@+id/leftTimeID"
         app:layout_constraintTop_toBottomOf="@+id/seekBar"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:text="04:00"
+        />
 
     <TableRow
         android:layout_width="wrap_content"
@@ -95,6 +98,7 @@
 
         <Button
             android:id="@+id/prevButton"
+            style="@style/Widget.AppCompat.Button"
             android:layout_width="48dp"
             android:layout_height="wrap_content"
             android:background="@android:drawable/ic_media_previous"
@@ -102,14 +106,15 @@
 
         <Button
             android:id="@+id/playButton"
+            style="@style/Widget.AppCompat.Button"
             android:layout_width="48dp"
             android:layout_height="wrap_content"
             android:background="@android:drawable/ic_media_play"
-            tools:ignore="SpeakableTextPresentCheck"
-            />
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
             android:id="@+id/nextButton"
+            style="@style/Widget.AppCompat.Button"
             android:layout_width="48dp"
             android:layout_height="wrap_content"
             android:background="@android:drawable/ic_media_next"

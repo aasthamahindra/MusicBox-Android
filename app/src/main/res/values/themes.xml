@@ -2,6 +2,6 @@
     <style name="CustomTheme" parent="Theme.AppCompat.DayNight">
         <item name="colorPrimary"> @color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="android:text">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
     </style>
 </resources>
